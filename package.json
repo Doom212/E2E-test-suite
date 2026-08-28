@@ -1,0 +1,28 @@
+{
+  "name": "e2e-test-suite",
+  "version": "1.0.0",
+  "description": "Automated end-to-end web test suite built with Playwright and TypeScript, using the Page Object Model pattern. Includes UI, API, and visual regression tests plus CI integration.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen",
+    "install:browsers": "playwright install --with-deps"
+  },
+  "keywords": ["playwright", "e2e", "testing", "automation", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.0"
+  }
+}
